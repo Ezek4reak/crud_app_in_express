@@ -1,0 +1,33 @@
+<!--include header file-->
+<%- include('include/_header.ejs') %>
+<!--/include header file-->
+
+        <!-- main site -->
+        <main id="site-main">
+            <div class="container">
+                <div class="content">
+                    <div class="box-nav d-flex justify-between">
+                        <div class="filter">
+                            <a href="/" class="border-shadow">
+                                <i class="fa fa-reply" aria-hidden="true"></i>  All Users  
+                            </a>
+                        </div>
+                    </div>
+            
+                    <div class="form-title text-center">
+                        <h2 class="text-dark">NEW USER FORM</h2>
+                    </div>
+                    
+                    <!--include form file-->
+                    <%- include('include/_form.ejs') %>
+                    <!--/include form file-->
+
+                </div>
+
+            </div>
+        </main>
+    <!-- /main site -->
+
+<!--include footer file-->
+<%- include('include/_footer.ejs') %>
+<!--/include footer file-->
