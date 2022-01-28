@@ -33,3 +33,5 @@ app.use('/img', express.static(path.resolve( __dirname, "assets/img")));
 app.use('/', require('./server/routes/router'));
 
 app.listen(PORT, () =>{console.log(`Server is now running on http://localhost:${PORT}`)});
+
+

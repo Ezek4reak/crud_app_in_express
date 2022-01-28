@@ -7,8 +7,22 @@
     --border: #dee2e6;
     --border-btn: #edf2f4;
 }
+.dot-red, .dot-green{
+    font-size: .4em !important;
+    float: right;
+    border-radius: 50%;
+    vertical-align:middle !important;
+    margin-top: 1.2em;
+}
 
-
+.dot-green{
+    background-color: #317e54;
+    color: #317e54;
+}
+.dot-red{
+    background-color: #e42626;
+    color: #e42626;
+}
 
 *{
     padding: 0;
@@ -344,10 +358,10 @@ fieldset{
 .btn-sm{
     font-size: x-small !important;
 }
-.btn-success{
+.btn-success, .dot-green{
     background-color: #317e54;
 }
-.btn-danger{
+.btn-danger, .dot-red{
     background-color: #e42626;
 }
 
@@ -367,7 +381,13 @@ fieldset{
     color: #fff;
 }
 
-
+.Blink {
+    animation: blinker 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+  }
+  @keyframes blinker {  
+    from { opacity: 1; }
+    to { opacity: 0; }
+  }
 
 
 

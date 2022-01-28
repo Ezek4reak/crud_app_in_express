@@ -14,7 +14,7 @@
         <% for(var i = 0; i < users.length; i++) { %>
         <tr>
             <td class="col-center"><%= i+1 %></td>
-            <td><%= users[i].name %></td>
+            <td> <%= users[i].name %> &nbsp; <i class="fa fa-circle  <%= users[i].status == 'Active' ? 'dot-green Blink' : 'dot-red' %>"></i> </td>
             <td><%= users[i].email %></td>
             <td><%= users[i].gender %></td>
             <td><%= users[i].status %></td>
