@@ -23,6 +23,7 @@ $('#update_user').submit((event) =>{
 
     $.ajax(request).done(function(response){
         alert("Data Updated Successfully");
+        window.location.href='http://localhost:3000';
     })
 });
 
@@ -42,6 +43,6 @@ if(window.location.pathname == "/"){
             });
             
         }
-        alert("Record Deleted Successfully");
+        // alert("Record Deleted Successfully");
     });
 }

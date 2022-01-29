@@ -26,7 +26,7 @@ route.get('/update-user', services.updateUser)
 * @descriptio delete user Route
 * @Method GET/delete-user:id
 */
-route.get('/delete-user', services.deleteUser)
+// route.get('/delete-user', services.deleteUser)
 
 //API
 route.post('/api/users', controller.create);

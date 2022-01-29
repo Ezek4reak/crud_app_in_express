@@ -7,7 +7,8 @@ exports.homeRoutes = (req, res) => {
         res.render('index', {users:response.data});
     })
     .catch(err => {
-        res.send(err)
+        // res.send(err)
+        res.render('errors', {error: "Some error occoured while retrieving users information"});
     });
 
 
@@ -24,10 +25,12 @@ exports.updateUser = (req, res) => {
         res.render("update_user",{user:userdata.data});
     })
     .catch(err => {
-        res.send(err)
+        // res.send(err)
+        res.render('errors', {error: `Could not fetch user with id "${req.query.id}" from the database`});
     });
 }
 
-exports.deleteUser = (req, res) => {
-    res.redirect('/');
-}
+
+// exports.deleteUser = (req, res) => {
+//     res.redirect('/');
+//}
